@@ -33,7 +33,7 @@ public class DocumentComposer {
                         String imgFile1 = listFile.getName();
                         int imgFormat1 = XWPFDocument.PICTURE_TYPE_PNG;
                         FileInputStream pictureData = new FileInputStream(listFile);
-                        tmpRun.addPicture(pictureData, imgFormat1, imgFile1, Units.toEMU(width1*0.70), Units.toEMU(height1*0.70));
+                        tmpRun.addPicture(pictureData, imgFormat1, imgFile1, Units.toEMU(width1*0.5), Units.toEMU(height1*0.5));
                         pictureData.close();
                         // page break
                     }

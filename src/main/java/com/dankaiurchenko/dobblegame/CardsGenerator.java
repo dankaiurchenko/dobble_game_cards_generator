@@ -15,7 +15,7 @@ public class CardsGenerator {
         }
         N = n;
         NUMBER_OF_ICONS_ON_A_CARD = n + 1;
-        NUMBER_OF_CARDS = n ^ 2 + n + 1;
+        NUMBER_OF_CARDS = (int) Math.pow(n, 2) + n + 1;
     }
 
     public Set<Card> generate() {
@@ -66,6 +66,16 @@ public class CardsGenerator {
             }
         }
         return prime;
+    }
+
+
+    @Override
+    public String toString() {
+        return "CardsGenerator{" +
+                "N=" + N +
+                ", NUMBER_OF_ICONS_ON_A_CARD=" + NUMBER_OF_ICONS_ON_A_CARD +
+                ", NUMBER_OF_CARDS=" + NUMBER_OF_CARDS +
+                '}';
     }
 }
 
